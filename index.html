@@ -1,0 +1,576 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png" type="image/png">
+    <title>Inspiora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Preloader HTML -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div id="cookie-consent">
+        <p>We use cookies to improve your experience. <a href="#">Learn more</a></p>
+        <button id="accept-cookies">Accept</button>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>Inspiora</h1>
+            <nav>
+                <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="#" id="login-link">Login</a></li>
+                <li class="user-menu" style="display:none;">
+                    <a href="#" id="user-greeting"></a>
+                    <ul class="dropdown">
+                        <li><a href="#" id="logout-link">Logout</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <div class="language-switcher">
+                <button class="lang-btn active">EN</button>
+                <button class="lang-btn">HI</button>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline id="hero-video">
+        <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+        <source src="assets/videos/hero-bg.webm" type="video/webm">
+        <!-- Fallback image if video doesn't load -->
+        <img src="assets/images/hero-fallback.jpg" alt="Background">
+    </video>
+    
+    <div class="video-overlay"></div>
+    
+    <div class="container">
+        <h2>Welcome to My <span class="highlight">Awesome</span> Site</h2>
+        <p>We build digital experiences that <strong>convert visitors into customers</strong></p>
+        <button class="cta-button">Get Started</button>
+    </div>
+</section>
+
+        <section id="about" class="about-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Not Just a Company, <span class="highlight">A Mission</span></h2>
+            <p class="subtitle">Driven by innovation, powered by people</p>
+        </div>
+
+        <div class="about-grid">
+            <!-- Story Card -->
+            <div class="about-card story-card">
+                <div class="card-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Our Story</h3>
+                <p>Founded in 2015, we started as a small team in a garage. Today, we're a family of 50+ innovators transforming ideas into digital reality.</p>
+                <button class="read-more">Read Full Story →</button>
+            </div>
+
+            <!-- Team Card -->
+            <div class="about-card team-card">
+                <div class="card-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Meet the Team</h3>
+                <div class="team-avatars">
+                    <img src="assets/images/team/avatar1.jpg" alt="Team Member" loading="lazy">
+                    <img src="assets/images/team/avatar2.jpg" alt="Team Member" loading="lazy">
+                    <img src="assets/images/team/avatar3.jpg" alt="Team Member" loading="lazy">
+                    <span class="avatar-count">+47</span>
+                </div>
+                <button class="cta-button">See All Team</button>
+            </div>
+
+            <!-- Stats Card -->
+            <div class="about-card stats-card">
+                <div class="stat-item">
+                    <span class="counter" data-target="500">0</span>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <span class="counter" data-target="98">0</span>%
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="stat-item">
+                    <span class="counter" data-target="15">0</span>+
+                    <p>Countries Served</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Values Section -->
+        <div class="values-section">
+            <h3>Our Core Values</h3>
+            <div class="values-grid">
+                <div class="value-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h4>Innovation</h4>
+                    <p>We challenge the status quo to deliver cutting-edge solutions.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-heart"></i>
+                    <h4>Passion</h4>
+                    <p>Love what we do, and it shows in every project.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-handshake"></i>
+                    <h4>Integrity</h4>
+                    <p>Honest communication and transparent processes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonial-section">
+    <div class="container">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-slider">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <div class="client-info">
+                    <img src="assets/images/clients/client1.jpg" alt="Client" loading="lazy">
+                    <div>
+                        <h4>Rahul Sharma</h4>
+                        <p>CEO, Tech Solutions</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Their team delivered our project on time with excellent quality. Highly recommended!"</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="client-info">
+                    <img src="assets/images/clients/client2.jpg" alt="Client" loading="lazy">
+                    <div>
+                        <h4>Priya Patel</h4>
+                        <p>Founder, Design Studio</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Amazing creativity and support. Will work with them again!"</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <section id="services" class="content-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                     <!-- Service 1 -->
+                    <div class="service-card">
+                        <i class="fas fa-code"></i>
+                        <h3><a  href="web-development.html">Web Development</a></h3>
+                        <p>Custom websites and web applications</p>
+                    </div>
+
+                     <!-- Service 2 -->
+                    <div class="service-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3><a href="graphic-design.html">Graphic Design</a></h3>
+                        <p>Beautiful visual designs for your brand</p>
+                    </div>
+
+                     <!-- Service 3 -->
+                    <div class="service-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3><a href="digital-marketing.html"">Digital Marketing</a></h3>
+                        <p>Grow your online presence</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3><a href="mobile-app-development.html">Mobile App Development</a></h3>
+                        <p>iOS and Android applications</p>
+                    </div>
+                
+                
+                    <!-- Service 5 -->
+                    <div class="service-card">
+                        <i class="fas fa-headset"></i>
+                        <h3><a href="it-support.html">IT Support</a></h3>
+                        <p>24/7 technical assistance</p>
+                    </div>
+                    
+                    <!-- Service 6 -->
+                    <div class="service-card">
+                        <i class="fas fa-keyboard"></i>
+                        <h3><a href="data-entry.html">Data Entry</a></h3>
+                        <p>Accurate and fast data entry services for businesses and organizations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing-section">
+    <div class="container">
+        <h2>Transparent Pricing</h2>
+        <p class="section-subtitle">Choose the perfect plan for your business needs</p>
+        
+        <div class="pricing-grid">
+            <!-- Basic Plan -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Starter</h3>
+                    <div class="price">₹15,000<span>/project</span></div>
+                    <p>Ideal for small businesses and startups</p>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> 5 Page Website</li>
+                    <li><i class="fas fa-check"></i> Mobile Responsive Design</li>
+                    <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+                    <li><i class="fas fa-check"></i> Contact Form</li>
+                    <li><i class="fas fa-check"></i> 1 Month Support</li>
+                </ul>
+                <button class="cta-button">Get Started</button>
+            </div>
+
+            <!-- Popular Plan -->
+            <div class="pricing-card popular">
+                <div class="popular-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <h3>Business</h3>
+                    <div class="price">₹35,000<span>/project</span></div>
+                    <p>Perfect for growing businesses</p>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> 10-15 Page Website</li>
+                    <li><i class="fas fa-check"></i> E-commerce Functionality</li>
+                    <li><i class="fas fa-check"></i> Advanced SEO</li>
+                    <li><i class="fas fa-check"></i> CMS Integration</li>
+                    <li><i class="fas fa-check"></i> 3 Months Support</li>
+                </ul>
+                <button class="cta-button">Get Started</button>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Enterprise</h3>
+                    <div class="price">₹75,000<span>/project</span></div>
+                    <p>Custom solutions for large businesses</p>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Unlimited Pages</li>
+                    <li><i class="fas fa-check"></i> Custom Web Application</li>
+                    <li><i class="fas fa-check"></i> Premium SEO</li>
+                    <li><i class="fas fa-check"></i> API Integrations</li>
+                    <li><i class="fas fa-check"></i> 6 Months Support</li>
+                </ul>
+                <button class="cta-button">Contact Us</button>
+            </div>
+        </div>
+
+        <div class="pricing-notes">
+            <p><i class="fas fa-info-circle"></i> All prices exclude GST. Custom projects available on request.</p>
+            <p><i class="fas fa-sync-alt"></i> Monthly payment plans available for large projects.</p>
+        </div>
+    </div>
+</section>
+
+
+        <!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio-section">
+    <div class="container">
+        <h2>Our Work</h2>
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="#web">Web Design</button>
+            <button class="filter-btn" data-filter="#app">Mobile Apps</button>
+            <button class="filter-btn" data-filter="#graphic">Graphic Design</button>
+        </div>
+        <div class="portfolio-grid">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item" data-category="web" id="web">
+                <img src="assets/images/portfolio/web1.jpg" alt="E-commerce Website" loading="lazy">
+                <div class="overlay">
+                    <h3>E-commerce Website</h3>
+                    <a href="#" class="view-btn">View Project</a>
+                </div>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item" data-category="app" id="app">
+                <img src="assets/images/portfolio/app1.jpg" alt="Fitness App" loading="lazy">
+                <div class="overlay">
+                    <h3>Fitness Tracker App</h3>
+                    <a href="#" class="view-btn">View Project</a>
+                </div>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item" data-category="graphic" id="graphic">
+                <img src="assets/images/portfolio/graphic1.jpg" alt="Brand Logo" loading="lazy">
+                <div class="overlay">
+                    <h3>Brand Identity Design</h3>
+                    <a href="#" class="view-btn">View Project</a>
+                </div>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- ======= Blog Section ======= -->
+<section id="blog" class="blog-section">
+    <div class="container">
+        <h2>Latest Articles & News</h2>
+        <p class="section-subtitle">Stay updated with our insights and industry trends</p>
+        
+        <div class="blog-grid">
+            <!-- Blog Post 1 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="assets/images/blog/web-design-trends.jpg" alt="Web Design Trends" loading="lazy">
+                    <span class="blog-category">Web Design</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">June 10, 2023</span>
+                    <h3><a href="#">Top 5 Web Design Trends in 2023</a></h3>
+                    <p>Discover the latest trends that are shaping modern websites and user experiences...</p>
+                    <a href="article1.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="assets/images/blog/seo-tips.jpg" alt="SEO Tips" loading="lazy">
+                    <span class="blog-category">SEO</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">May 25, 2023</span>
+                    <h3><a href="#">10 SEO Tips to Rank Higher in Google</a></h3>
+                    <p>Learn proven strategies to improve your website's search engine ranking...</p>
+                   1<a href="article2.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="assets/images/blog/mobile-app.jpg" alt="Mobile App Development" loading="lazy">
+                    <span class="blog-category">Mobile Apps</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">May 15, 2023</span>
+                    <h3><a href="#">How to Choose the Right Mobile App Framework</a></h3>
+                    <p>Compare React Native, Flutter, and native development for your next app project...</p>
+                    <a href="article3.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+
+        <div class="text-center">
+            <a href="blog.html" class="view-all-btn">View All Articles <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ======= FAQ Section ======= -->
+<section id="faq" class="faq-section">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <p class="section-subtitle">Find answers to common questions about our services</p>
+        
+        <div class="faq-accordion">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long does it take to complete a website project?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>The timeline depends on the complexity of the project. A basic website typically takes 2-4 weeks, while e-commerce websites may take 4-8 weeks. We provide a detailed timeline after our initial consultation.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What payment methods do you accept?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>We accept payments via bank transfer, UPI (Google Pay, PhonePe, Paytm), and credit/debit cards. We also provide flexible payment plans for larger projects.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you provide website maintenance after launch?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, we offer monthly maintenance packages that include updates, backups, security checks, and technical support. You can choose from our Basic, Standard, or Premium maintenance plans.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can you redesign my existing website?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolutely! We specialize in website redesigns that improve both aesthetics and functionality. We'll analyze your current site and propose improvements to enhance user experience and conversions.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What if I need changes after the project is completed?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>We provide 30 days of free minor revisions after project completion. After that, we offer affordable hourly rates or maintenance packages for ongoing updates.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-cta">
+            <p>Still have questions? <a href="#contact">Contact us</a> and we'll be happy to help!</p>
+        </div>
+    </div>
+</section>
+
+        <section id="contact" class="content-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="https://formsubmit.co/aanya.singh2638@gmail.com" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name"required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phonenumber" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://yourthankyouwebsite.netlify.app/">
+                    <input type="hidden" name="_template" value="table">
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+
+            </div>
+        </section>
+      <section>
+                  <!-- Login Modal -->
+        <div id="login-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Login</h2>
+                <form action="https://formsubmit.co/aanya.singh2638@gmail.com" method="POST" id="login-form">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phonenumber" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://yourthankyouwebsite.netlify.app/">
+                    <input type="hidden" name="_template" value="table">
+                    <button type="submit" class="submit-button">Login</button>
+                    <p class="form-footer">Don't have an account? <a href="#" id="show-register">Register</a></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Register Modal -->
+        <div id="register-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Register</h2>
+                <form action="https://formsubmit.co/aanya.singh2638@gmail.com" method="POST" id="register-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Full Name"required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phonenumber" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password"  name="password" placeholder="Password">
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" id="nextPage">
+                    <input type="hidden" name="_template" value="table">
+                    <button type="submit" class="submit-button">Register</button>
+                    <p class="form-footer">Already have an account? <a href="#" id="show-login">Login</a></p>
+                </form>
+
+                <script>
+                    // Redirect ko automatic success page pe set karega
+                     document.getElementById("nextPage").value = window.location.origin + "/success.html";
+                </script>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Website. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Live Chat Support -->
+    <div class="chat-widget">
+        <button id="chat-button"><i class="fas fa-comments"></i> Need Help?</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

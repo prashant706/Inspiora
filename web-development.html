@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development - My Website</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+/* ===== Custom Styles for Web Development Page ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header, footer {
+    background: var(--dark-color);
+    color: #fff;
+    padding: 20px 0;
+}
+header h1, footer p {
+    margin: 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero-section {
+    background: url('assets/images/web-dev-hero.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+.hero-section::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.hero-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.cta-button {
+    background: #ff6b00;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cta-button:hover {
+    background: #ff3d00;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section {
+    padding: 60px 0;
+}
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.section p.subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    color: #555;
+}
+.features-grid, .process-grid, .testimonials-grid {
+    display: grid;
+    gap: 30px;
+}
+.features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.features-grid .feature-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+.features-grid .feature-card:hover {
+    transform: translateY(-5px);
+}
+.features-grid .feature-card i {
+    font-size: 2rem;
+    color: #ff6b00;
+    margin-bottom: 15px;
+}
+.process-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.process-grid .process-step {
+    background: #fff3e0;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+.process-grid .process-step i {
+    font-size: 2rem;
+    color: #ff6b00;
+    margin-bottom: 10px;
+}
+.testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.testimonials-grid .testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.testimonials-grid .testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.testimonials-grid .testimonial-card .client-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+footer {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<h1>Inspiora</h1>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<!-- Hero Section -->
+<section class="hero-section">
+<div class="hero-content">
+<h2>Web Development Services</h2>
+<p>Creating stunning, responsive websites that drive results and help your business grow online.</p>
+<a href="contact.html" class="cta-button">Get Started</a>
+</div>
+</section>
+
+<!-- Features Section -->
+<section class="section">
+<div class="container">
+<h2>What We Offer</h2>
+<p class="subtitle">Comprehensive solutions to meet all your web development needs</p>
+<div class="features-grid">
+<div class="feature-card">
+<i class="fas fa-desktop"></i>
+<h3>Responsive Design</h3>
+<p>Websites that look perfect on all devices, from desktops to smartphones.</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-code"></i>
+<h3>Custom Development</h3>
+<p>Tailored web applications using the latest technologies to suit your business needs.</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-shopping-cart"></i>
+<h3>E-commerce Solutions</h3>
+<p>Create online stores with seamless shopping experiences for your customers.</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-search"></i>
+<h3>SEO-Friendly Websites</h3>
+<p>Built to rank higher on search engines and attract organic traffic.</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-cogs"></i>
+<h3>CMS Integration</h3>
+<p>Easy-to-manage content management systems like WordPress, Joomla, or custom CMS.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Process Section -->
+<section class="section" style="background:#f5f5f5;">
+<div class="container">
+<h2>Our Process</h2>
+<p class="subtitle">How we deliver high-quality web development projects</p>
+<div class="process-grid">
+<div class="process-step">
+<i class="fas fa-lightbulb"></i>
+<h3>Planning</h3>
+<p>Understanding your requirements and creating a roadmap for success.</p>
+</div>
+<div class="process-step">
+<i class="fas fa-pencil-ruler"></i>
+<h3>Design</h3>
+<p>Crafting visually appealing layouts and intuitive UI/UX design.</p>
+</div>
+<div class="process-step">
+<i class="fas fa-laptop-code"></i>
+<h3>Development</h3>
+<p>Building functional, secure, and responsive websites with clean code.</p>
+</div>
+<div class="process-step">
+<i class="fas fa-rocket"></i>
+<h3>Launch</h3>
+<p>Deploying your website and ensuring it runs smoothly across all platforms.</p>
+</div>
+<div class="process-step">
+<i class="fas fa-hand-holding-usd"></i>
+<h3>Maintenance</h3>
+<p>Ongoing support, updates, and improvements to keep your site performing optimally.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section">
+<div class="container">
+<h2>Client Testimonials</h2>
+<p class="subtitle">Hear from businesses we've helped grow</p>
+<div class="testimonials-grid">
+<div class="testimonial-card">
+<div class="client-info">
+<img src="assets/images/clients/client1.jpg" alt="Client">
+<div>
+<h4>Rahul Sharma</h4>
+<p>CEO, Tech Solutions</p>
+</div>
+</div>
+<p>"The team delivered an amazing website that exceeded our expectations. Highly professional and efficient!"</p>
+</div>
+<div class="testimonial-card">
+<div class="client-info">
+<img src="assets/images/clients/client2.jpg" alt="Client">
+<div>
+<h4>Priya Patel</h4>
+<p>Founder, Design Studio</p>
+</div>
+</div>
+<p>"Our website traffic increased dramatically after they redesigned our site. Excellent work!"</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="section" style="text-align:center;">
+<a href="contact.html" class="cta-button">Get Started Today</a>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+<p>&copy; 2023 My Website. All rights reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>

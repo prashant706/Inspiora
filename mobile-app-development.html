@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile App Development - My Website</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+/* ===== Custom Styles for Mobile App Development Page ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header, footer {
+    background: var(--dark-color);
+    color: #fff;
+    padding: 20px 0;
+}
+header h1, footer p {
+    margin: 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero-section {
+    background: url('assets/images/mobile-app-hero.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+.hero-section::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.hero-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.cta-button {
+    background: #007bff;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cta-button:hover {
+    background: #0069d9;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section {
+    padding: 60px 0;
+}
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.section p.subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    color: #555;
+}
+.services-grid, .process-grid, .testimonials-grid {
+    display: grid;
+    gap: 30px;
+}
+.services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.services-grid .service-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+.services-grid .service-card:hover {
+    transform: translateY(-5px);
+}
+.services-grid .service-card i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.process-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.process-grid .process-step {
+    background: #e6f0fa;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+.process-grid .process-step i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.testimonials-grid .testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.testimonials-grid .testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.testimonials-grid .testimonial-card .client-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+footer {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<h1>Inspiora</h1>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<!-- Hero Section -->
+<section class="hero-section">
+<div class="hero-content">
+<h2>Mobile App Development</h2>
+<p>Transform your ideas into interactive, high-performance mobile applications for iOS and Android platforms.</p>
+<a href="contact.html" class="cta-button">Get Started</a>
+</div>
+</section>
+
+<!-- Services Offered -->
+<section class="section">
+<div class="container">
+<h2>Our App Development Services</h2>
+<p class="subtitle">From concept to launch, we cover everything</p>
+<div class="services-grid">
+<div class="service-card">
+<i class="fas fa-mobile-alt"></i>
+<h3>iOS App Development</h3>
+<p>Build native iPhone and iPad applications using Swift and Xcode with smooth performance.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-android"></i>
+<h3>Android App Development</h3>
+<p>Create high-quality Android apps with Kotlin/Java ensuring compatibility across devices.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-layer-group"></i>
+<h3>Cross-Platform Apps</h3>
+<p>Develop apps for multiple platforms using Flutter or React Native for faster deployment.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-database"></i>
+<h3>Backend Development</h3>
+<p>Robust and scalable server-side solutions using Node.js, Firebase, or PHP for app data management.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-paint-brush"></i>
+<h3>UI/UX Design</h3>
+<p>Create visually stunning and intuitive interfaces that enhance user experience and engagement.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-search"></i>
+<h3>App Store Optimization</h3>
+<p>Improve app visibility in App Store and Google Play to increase downloads and user acquisition.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Development Process Section -->
+<section class="section" style="background:#f5f5f5;">
+<div class="container">
+<h2>Our Development Process</h2>
+<p class="subtitle">Step-by-step approach to deliver successful apps</p>
+<div class="process-grid">
+<div class="process-step">
+<i class="fas fa-lightbulb"></i>
+<h3>Idea & Concept</h3>
+<p>Collaborate with you to understand your vision and define app goals.</p>
+</div>
+<div class="process-step">
+<i class="fas fa-pencil-ruler"></i>
+<h3>Design & Prototyping</h3>
+<p>Create wireframes, UI designs, and interactive prototypes for client approval.</p>
+</div>
+<div class="process-step">
+<i class="fas fa-code"></i>
+<h3>Development</h3>
+<p>Write clean, efficient code and implement features on iOS/Android platforms.</p>
+</div>
+<div class="process-step">
+<i class="fas fa-bug"></i>
+<h3>Testing</h3>
+<p>Conduct thorough QA to ensure bug-free, high-performance apps.</p>
+</div>
+<div class="process-step">
+<i class="fas fa-rocket"></i>
+<h3>Launch & Support</h3>
+<p>Deploy app to stores and provide ongoing maintenance and updates.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section">
+<div class="container">
+<h2>What Our Clients Say</h2>
+<p class="subtitle">Hear from businesses we've helped grow</p>
+<div class="testimonials-grid">
+<div class="testimonial-card">
+<div class="client-info">
+<img src="assets/images/clients/client7.jpg" alt="Client">
+<div>
+<h4>Vikram Singh</h4>
+<p>Founder, TravelMate</p>
+</div>
+</div>
+<p>"Their app development team delivered an intuitive mobile app that our users love!"</p>
+</div>
+<div class="testimonial-card">
+<div class="client-info">
+<img src="assets/images/clients/client8.jpg" alt="Client">
+<div>
+<h4>Alisha Mehta</h4>
+<p>CTO, HealthTrack</p>
+</div>
+</div>
+<p>"Highly professional team, delivered on time, and provided excellent support during launch."</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="section" style="text-align:center;">
+<a href="contact.html" class="cta-button">Start Your App Development Project</a>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+<p>&copy; 2023 My Website. All rights reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>

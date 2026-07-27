@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Inspiora</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="#" id="login-link">Login</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero careers-hero">
+        <div class="container">
+            <h2>Join Our Team</h2>
+            <p>We are always looking for talented individuals – Freshers and 12th Pass Candidates are welcome!</p>
+            <a href="#open-positioxns" class="cta-button">Explore Open Positions</a>
+        </div>
+    </section>
+
+    <!-- Careers Info Section -->
+    <section class="careers-info">
+        <div class="container">
+            <h2>Why Work With Us?</h2>
+            <div class="careers-grid">
+                <div class="career-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Learning & Growth</h3>
+                    <p>We provide on-the-job training, mentorship, and opportunities to develop your skills.</p>
+                </div>
+                <div class="career-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Friendly Environment</h3>
+                    <p>Collaborative and supportive workplace culture where fresh ideas are valued.</p>
+                </div>
+                <div class="career-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Recognition</h3>
+                    <p>We celebrate achievements and reward contributions to the team’s success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section id="open-positions" class="open-positions">
+        <div class="container">
+            <h2>Open Positions</h2>
+            <p>We welcome applications from Fresher candidates and 12th Pass students who are eager to start their career with us.</p>
+
+            <div class="job-listing">
+                <div class="job-card">
+                    <h3>Junior Web Developer (Fresher)</h3>
+                    <p><strong>Location:</strong> Remote / Office</p>
+                    <p><strong>Requirements:</strong> Basic knowledge of HTML, CSS, JavaScript. Freshers welcome!</p>
+                    <a href="#apply-form" class="cta-button">Apply Now</a>
+                </div>
+
+                <div class="job-card">
+                    <h3>Data Entry Executive (12th Pass)</h3>
+                    <p><strong>Location:</strong> Office</p>
+                    <p><strong>Requirements:</strong> Good typing speed, attention to detail. 12th Pass candidates can apply.</p>
+                    <a href="#apply-form" class="cta-button">Apply Now</a>
+                </div>
+
+                <div class="job-card">
+                    <h3>Customer Support Executive</h3>
+                    <p><strong>Location:</strong> Remote / Office</p>
+                    <p><strong>Requirements:</strong> Good communication skills, friendly attitude. Freshers encouraged to apply.</p>
+                    <a href="#apply-form" class="cta-button">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Form -->
+    <section id="apply-form" class="apply-section">
+        <div class="container">
+            <h2>Apply for a Position</h2>
+            <form action="https://formsubmit.co/aanya.singh2638@gmail.com" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phonenumber" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="position" placeholder="Position Applying For" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Additional Information"></textarea>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://yourthankyouwebsite.netlify.app/">
+                <input type="hidden" name="_template" value="table">
+                <button type="submit" class="submit-button">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Website. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

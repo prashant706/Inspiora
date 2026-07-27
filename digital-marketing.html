@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Marketing - My Website</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+/* ===== Custom Styles for Digital Marketing Page ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header, footer {
+    background: var(--dark-color);
+    color: #fff;
+    padding: 20px 0;
+}
+header h1, footer p {
+    margin: 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero-section {
+    background: url('assets/images/digital-marketing-hero.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+.hero-section::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.hero-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.cta-button {
+    background: #28a745;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cta-button:hover {
+    background: #218838;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section {
+    padding: 60px 0;
+}
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.section p.subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    color: #555;
+}
+.services-grid, .process-grid, .testimonials-grid {
+    display: grid;
+    gap: 30px;
+}
+.services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.services-grid .service-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+.services-grid .service-card:hover {
+    transform: translateY(-5px);
+}
+.services-grid .service-card i {
+    font-size: 2rem;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+.process-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.process-grid .process-step {
+    background: #e6f4ea;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+.process-grid .process-step i {
+    font-size: 2rem;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+.testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.testimonials-grid .testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.testimonials-grid .testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.testimonials-grid .testimonial-card .client-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+footer {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<h1>Inspiora</h1>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<!-- Hero Section -->
+<section class="hero-section">
+<div class="hero-content">
+<h2>Digital Marketing Services</h2>
+<p>Boost your online presence and grow your business with our result-driven digital marketing strategies.</p>
+<a href="contact.html" class="cta-button">Get Started</a>
+</div>
+</section>
+
+<!-- Services Offered -->
+<section class="section">
+<div class="container">
+<h2>Our Digital Marketing Expertise</h2>
+<p class="subtitle">Tailored strategies to maximize your ROI</p>
+<div class="services-grid">
+<div class="service-card">
+<i class="fas fa-search-dollar"></i>
+<h3>SEO Optimization</h3>
+<p>Increase organic traffic with high-ranking search engine optimization strategies.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-bullhorn"></i>
+<h3>Social Media Marketing</h3>
+<p>Engage your audience on Facebook, Instagram, LinkedIn, and other platforms.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-envelope-open-text"></i>
+<h3>Email Marketing</h3>
+<p>Convert leads into customers with highly targeted email campaigns.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-chart-line"></i>
+<h3>PPC Advertising</h3>
+<p>Get instant traffic with Google Ads, Facebook Ads, and other paid campaigns.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-video"></i>
+<h3>Content Marketing</h3>
+<p>Create valuable blog posts, videos, and infographics to engage and educate your audience.</p>
+</div>
+<div class="service-card">
+<i class="fas fa-mobile-alt"></i>
+<h3>Mobile Marketing</h3>
+<p>Target users on mobile devices with SMS, push notifications, and app promotions.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Process Section -->
+<section class="section" style="background:#f5f5f5;">
+<div class="container">
+<h2>Our Digital Marketing Process</h2>
+<p class="subtitle">Step-by-step approach for measurable results</p>
+<div class="process-grid">
+<div class="process-step">
+<i class="fas fa-bullseye"></i>
+<h3>Research & Analysis</h3>
+<p>Understand your business, competitors, and target audience for a solid foundation.</p>
+</div>
+<div class="process-step">
+<i class="fas fa-lightbulb"></i>
+<h3>Strategy Planning</h3>
+<p>Define goals, key metrics, and marketing channels to achieve success.</p>
+</div>
+<div class="process-step">
+<i class="fas fa-cogs"></i>
+<h3>Execution</h3>
+<p>Implement campaigns across SEO, social media, PPC, and content marketing.</p>
+</div>
+<div class="process-step">
+<i class="fas fa-chart-pie"></i>
+<h3>Monitoring</h3>
+<p>Track performance and optimize campaigns based on data insights.</p>
+</div>
+<div class="process-step">
+<i class="fas fa-trophy"></i>
+<h3>Results</h3>
+<p>Deliver measurable results, increased leads, conversions, and brand awareness.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section">
+<div class="container">
+<h2>Client Testimonials</h2>
+<p class="subtitle">See how we helped businesses grow online</p>
+<div class="testimonials-grid">
+<div class="testimonial-card">
+<div class="client-info">
+<img src="assets/images/clients/client5.jpg" alt="Client">
+<div>
+<h4>Rohit Verma</h4>
+<p>CEO, Startup Ventures</p>
+</div>
+</div>
+<p>"Their digital marketing strategies boosted our online sales by 200% in just 3 months!"</p>
+</div>
+<div class="testimonial-card">
+<div class="client-info">
+<img src="assets/images/clients/client6.jpg" alt="Client">
+<div>
+<h4>Neha Sharma</h4>
+<p>Marketing Head, EcomStore</p>
+</div>
+</div>
+<p>"Professional team, highly knowledgeable, and results-driven. Highly recommended!"</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="section" style="text-align:center;">
+<a href="contact.html" class="cta-button">Start Your Digital Marketing Campaign</a>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+<p>&copy; 2023 My Website. All rights reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>
